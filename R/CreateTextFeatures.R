@@ -63,7 +63,7 @@ CreateTextFeatures <- function(segmented.reports,
                            min_docfreq = min_doc_prop,
                            max_docfreq = max_doc_prop,
                            docfreq_type = docfreq) %>%
-        quanteda:dfm_tfidf(scheme_tf = tf_type, # change count to binary
+        quanteda::dfm_tfidf(scheme_tf = tf_type, # change count to binary
                            scheme_df = df_type) %>%
         as.data.frame(.) %>%
         dplyr::rename(imageid = document)
