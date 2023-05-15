@@ -48,7 +48,7 @@ CreateTextFeatures <- function(segmented.reports,
         quanteda::dfm(., language = "english",
                       tolower = TRUE,
                       stem = TRUE,
-                      remove = all.stop.words,
+                      dfm_remove = all.stop.words,
                       thesaurus = finding.dictionary,
                       valuetype = "glob",
                       remove_punct = TRUE,
@@ -65,7 +65,7 @@ CreateTextFeatures <- function(segmented.reports,
                            docfreq_type = docfreq) %>%
         quanteda::dfm_tfidf(scheme_tf = tf_type, # change count to binary
                            scheme_df = df_type) %>%
-        as.data.frame(.) %>%
+        convert(., to='data.frame') %>%
         dplyr::rename(imageid = doc_id)
 
       colnames(this.dfm)[2:ncol(this.dfm)] <- paste(toupper(text.cols[col]),
