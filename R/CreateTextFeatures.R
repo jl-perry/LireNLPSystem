@@ -47,7 +47,7 @@ CreateTextFeatures <- function(segmented.reports,
         ## Make feature matrix
         quanteda::dfm(., language = "english",
                       tolower = TRUE,
-                      stem = TRUE,
+                      dfm_wordstem = TRUE,
                       dfm_remove = all.stop.words,
                       thesaurus = finding.dictionary,
                       valuetype = "glob",
