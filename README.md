@@ -190,6 +190,11 @@ This function takes in the sentence-by-sentence output of the ```RuleBasedNLP_Ja
     + 1, if at least one sentence with a non-negated keyword.
     + -1, if all keywords are negated.
     + 0, otherwise.
+
+|Body Score |Impression Score   |Report Score   |
+|:----------|:------------------|:--------------|
+|0          |0                  |0              |
+
   
 Example usage:
 ```{r}
