@@ -185,11 +185,11 @@ regex.df.java <- RuleBasedNLP_JavaSentence(segmented.reports,
 
 This function takes in the sentence-by-sentence output of the ```RuleBasedNLP_JavaSentence``` function, and aggregates over all sentences to get a report level prediction. For every finding, the logic is as follows:
 
-* Report level prediction: See lookup table below.
 * Section level prediction:  
     + 1, if at least one sentence with a non-negated keyword.
     + -1, if all keywords are negated.
     + 0, otherwise.
+* Report level prediction: See lookup table below.
 
 |Body Score |Impression Score   |Report Score   |
 |:----------|:------------------|:--------------|
