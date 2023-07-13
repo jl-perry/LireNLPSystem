@@ -193,8 +193,15 @@ This function takes in the sentence-by-sentence output of the ```RuleBasedNLP_Ja
 
 |Body Score |Impression Score   |Report Score   |
 |:----------|:------------------|:--------------|
+|1          |1                  |1              |
+|1          |0                  |1              |
+|1          |-1                 |-1             |
+|0          |1                  |1              |
 |0          |0                  |0              |
-
+|0          |-1                 |-1             |
+|-1         |1                  |1              |
+|-1         |0                  |-1             |
+|-1         |-1                 |-1             |
   
 Example usage:
 ```{r}
