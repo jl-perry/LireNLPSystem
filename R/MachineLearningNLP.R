@@ -45,7 +45,7 @@ MachineLearningNLP <- function(finding.list,
 
     stopifnot(all(betahat$feature_name == colnames(X))) # names of matrix & vector match?
     print(paste("Num non-zero feature weights =",dim(modelFile)[1]-1))
-    print(paste("Num in this feature matirx =",dim(betahat)[1]))
+    print(paste("Num in this feature matrix =",dim(betahat)[1]))
 
     ### Run Model
     eta = as.matrix(X) %*% as.matrix(betahat$feature_weight) ## compute linear predictor eta = X %*% beta
