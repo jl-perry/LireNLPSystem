@@ -222,6 +222,12 @@ public class KeywordDictionary implements Map {
 				// modic <-> type1
 				"type.?(1|i|one)(?!i)(\\w*\\s*){1,3}m(o|e)dic",
 				"m(o|e)dic(\\w*\\s*){1,3}type.?(1|i|one)(?!i)(-(2|ii|two))?",
+                // modic <-> type1 new
+                "fibrovascular\\s*end\\s*plate\\s*changes",
+                "mixed\\s*fibrofatty\\s*and\\s*fibrovascular\\s*end\\s*plate\\s*changes",
+                "fibrofatty\\s*degenerative\\s*end\\s*plate\\s*changes",
+                "modic\\s*(1|i|one)\\s*and\\s*(2|ii|two)\\s*end\\s*plate\\s*changes",
+                "modic\\s*type\\s*I\\s*and\\s*modic\\s*type\\s*II\\s*end\\s*plate\\s*changes",
 
 				// acute phase degenerative signal change
 				"acute\\s*phase(\\w*\\s*){1,5}change",
@@ -236,7 +242,7 @@ public class KeywordDictionary implements Map {
 				"end\\s*plate(\\w*\\s*){1,3}(high|increased)\\s*t2",
 				"t2\\s*hyperintensity(\\w*\\s*-*\\*/*){1,10}end\\s*plate",
 				"end\\s*plate(\\w*\\s*){1,3}t2\\s*hyperintensity",
-				"type.?(1|i|one)(?!i)(\\w*\\s*-*\\*/*){1,10}end\\s*plate",
+				"type.?(1|i|one)(?!i)(\\w*\\s*-*\\*/*){1,10}end\\s*plate"
 		};
 
 
