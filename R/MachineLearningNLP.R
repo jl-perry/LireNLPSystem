@@ -44,6 +44,7 @@ MachineLearningNLP <- function(finding.list,
       filter(feature_name %in%  c("Intercept", colnames(X)))
 
     stopifnot(all(betahat$feature_name == colnames(X))) # names of matrix & vector match?
+    print("Katherine MachineLearningNLP.R")
     print(paste("Num non-zero feature weights =",dim(modelFile)[1]-1))
     print(paste("Num in this feature matrix =",dim(betahat)[1]))
 
